@@ -1,5 +1,4 @@
 # Ignore Tableau packaged workbooks and extracts (large binary files)
-*.twbx
 *.hyper
 *.tde
 *.tdsx
