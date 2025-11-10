@@ -1,0 +1,23 @@
+# Ignore Tableau packaged workbooks and extracts (large binary files)
+*.twbx
+*.hyper
+*.tde
+*.tdsx
+*.tdm
+
+# Ignore raw datasets (large CSVs)
+Data/*.csv
+data/*.csv
+
+# Ignore OS & Editor junk
+.DS_Store
+Thumbs.db
+
+# Ignore temporary / backup files
+*.bak
+*.tmp
+*.log
+
+# Ignore virtual environments (if used later)
+venv/
+.env
