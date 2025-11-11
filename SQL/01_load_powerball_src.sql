@@ -42,7 +42,7 @@ CREATE TABLE powerball_src (
 -- Load the CSV into the source table
 -- NOTE: Update the LOCAL INFILE path if your project folder changes.
 LOAD DATA LOCAL INFILE
-    '/Users/jasonli/Desktop/PROJECTS/Powerball Analysis/Data/Lottery_Powerball_Winning_Numbers__Beginning_2010.csv'
+    './Data/Lottery_Powerball_Winning_Numbers__Beginning_2010.csv'
 INTO TABLE powerball_src
 FIELDS TERMINATED BY ','
 OPTIONALLY ENCLOSED BY '"'
