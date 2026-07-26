@@ -66,9 +66,19 @@ All SQL scripts live in the [`sql/`](sql/) folder and are designed to be idempot
 
 5. **`00_run_all.sql`**  
    - Master script that runs all of the above in order.  
-   - Usage (from the `sql/` folder):  
+   - Run it from the **repository root** (not the `sql/` folder), since step 01
+     loads the CSV using the relative path `./Data/...`:
+
      ```bash
-     mysql -u root -p < 00_run_all.sql
+     mysql -u root -p --local-infile=1 < SQL/00_run_all.sql
+     ```
+
+   - Requires `LOCAL INFILE` enabled on both client and server. Pass
+     `--local-infile=1` as above, or set it once in `my.cnf` under `[mysqld]`
+     and `[client]`.
+   - Uses the `mysql` command-line client only. `SOURCE` is a client built-in
+     rather than SQL, so this script will not run inside MySQL Workbench —
+     open and execute `01`–`04` individually there.
 
 ### Tableau dashboard
 
