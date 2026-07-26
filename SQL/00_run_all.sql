@@ -63,7 +63,6 @@ SOURCE SQL/04_build_powerball_pivot_view.sql
 -- ----------------------------------------------------------------------------
 
 -- USE lottery;
-
 -- -- Row counts should be identical across the pipeline
 -- SELECT
 --     (SELECT COUNT(*) FROM powerball_src)   AS src_rows,
