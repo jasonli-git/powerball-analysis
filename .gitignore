@@ -20,3 +20,8 @@ Thumbs.db
 # Ignore virtual environments (if used later)
 venv/
 .env
+# Exceptions: these specific files are small (<250 KB) and are the only
+# copies that exist, so they are tracked despite the rules above.
+!federated.hyper
+!federated 1.hyper
+!Data/Lottery_Powerball_Winning_Numbers__Beginning_2010.csv

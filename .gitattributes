@@ -1,2 +1,7 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Preserve these byte-for-byte: they are the only copies that exist.
+*.hyper binary
+*.twb   -text
+*.csv   -text
